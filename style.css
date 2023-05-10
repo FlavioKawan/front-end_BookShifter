@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body{
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+
+.Lateral{
+    background-color: #1B3764;
+    padding: 14%;
+    margin-right: 100%;
+    min-height: 100%;
+    min-width: 30%;
+    position: absolute;
+}
+
+
+#logo{
+    position: absolute;
+    top: 0%;
+    object-fit: cover;  
+    height: 20%;
+    min-width: 30%;
+}
+
+
+.apresentacao{
+    position: absolute;
+    top: 23%;
+    left: 4%;
+    color: #fff;
+
+}
+p.apresentacao{
+    top: 38%;
+    font-size: clamp(1em, 1em + 1vw, 1.2em);
+
+}
+
+
+.fourth {
+    border-color: #ffffff;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #ffd901 50%, transparent 110% );
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    border-radius: 60px;
+    background-color: transparent;
+    
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+
+
+
+.btn{
+    top: 60%;
+    position: absolute;
+    width: 19% ;
+    height: 14%;
+    right: 77%;
+    white-space: normal;
+    
+}
+
+
+
+
+
+#formulario{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    border: 0;
+    display: flex;
+}
+
+#campo_nome , .campo_email, #campo_senha{
+    background-color: #D9D9D9;
+    width: 100vh;
+    height: 7vh;
+    max-height: 7vh;
+    border: 0;
+    position: absolute;
+    top: 60px;
+}
+
+#campo_senha{
+    top: 125px
+   
+}
+
+
+.campo_senha{
+    top: 140px;
+
+
+}
