@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-eequiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+    <script src="fun.js"></script>
+
+
+</head>
+
+<body>
+    <div class="Lateral"></div>
+    <img id="logo" src="assets/logo.png" alt="some text" width=60 height=40>
+    <a href="#"><button class="btn_lateral first">Login</button></a>
+    <div class="titulo-lateral">
+        <h2 class="apresentacao">Bem vindo (a)<br>ao Bookshifter!</h2>
+        <p class="apresentacao">Acesse sua conta Agora mesmo!!
+        </p>
+    </div>
+
+
+    <main>
+        <div class="Titulo">
+            <h1>Cadastrar</h1>
+            <p>Preencha seus dados</p>
+        </div>
+        <div id="formulario">
+            <form>
+                <input type="password" name="Senha" placeholder="Senha   " id="campo_senha" required="required">
+                <button id="btn_mostrar" type="button">
+                    <img src="assets/olho.png" class="olho" />
+                </button>
+            </form>
+            <form>
+                <input type="email" name="Email" placeholder="E-mail" id="campo_email" required="required">
+            </form>
+
+            <form>
+                <input type="text" name="Nome/Nome Fantasia" placeholder="Nome/Nome Fantasia" id="campo_nome"
+                    required="required">
+            </form>
+
+            <form>
+                <input type="text" name="Sobrenome" placeholder="Sobrenome/Razão social" id="campo_sobre"
+                    required="required">
+            </form>
+
+            <form>
+                <input type="text" name="CPF" placeholder="CPF/CNPJ" id="campo_cpf" required="required">
+            </form>
+
+            <form>
+                <input type="text" name="Telefone" placeholder="Telefone" id="campo_tel" required="required">
+            </form>
+
+            <form>
+                <input type="text" name="Endereço" placeholder="Endereço" id="campo_endereco" required="required">
+            </form>
+
+            <form>
+                <input type="text" onfocus="(this.type='date')" placeholder="Data de Nascimento" id="campo_data"
+                    required="required" onclick="esconderTexto()" onblur="mostrarTexto()">
+                <P id="text_data" class="esconder">Data de Nascimento</P>
+            </form>
+            <div class="botao-login">
+                <button type="submit">Entrar</button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

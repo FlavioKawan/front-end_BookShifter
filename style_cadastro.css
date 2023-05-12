@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+
+:root{
+    --color-principal: #1B3764;
+    --color-secundaria: #F9D423;
+}
+
+
+/* PARTE LATERAL */
+.Lateral{
+    background-color: #1B3764;
+    padding: 14%;
+    margin-right: 100%;
+    min-height: 100%;
+    min-width: 30%;
+    position: absolute;
+}
+
+
+#logo{
+    position: absolute;
+    top: 0%;
+    object-fit: cover;  
+    height: 20%;
+    min-width: 30%;
+}
+
+
+.apresentacao{
+    position: absolute;
+    top: 23%;
+    left: 6%;
+    color: #fff;
+
+}
+p.apresentacao{
+    top: 42%;
+    left: 5%;
+    font-size: clamp(1em, 1em + 1vw, 1.2em);
+
+}
+
+
+/* Botão latetal */
+.first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    border-radius: 60px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #ffffff;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #F9D423 inset;
+  }
+  
+
+.btn_lateral{
+    top: 60%;
+    position: absolute;
+    width: 19% ;
+    height: 14%;
+    right: 76%;
+    white-space: normal;    
+}
+
+
+
+/* Titulo Login*/
+
+.Titulo{
+    position: absolute;
+    font-size: 23px;
+    left: 56%;
+    bottom: 80%;
+}
+.Titulo > p{
+    font-size: 18px;
+    position: absolute;
+    white-space: nowrap;
+    right: 20px;
+    top: 53px;
+}
+
+
+
+/* Formulario */
+#formulario{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    border: 0;
+    
+}
+
+#campo_data, #campo_nome, #campo_sobre, #campo_cpf{
+    background-color: #D9D9D9;
+    width:45vh;
+    height: 45px;
+    max-height: 100vh;
+    border: 0;
+    position: absolute;
+    margin-top: 60px;
+    margin-left:5vh;
+    
+}
+
+
+
+
+
+
+
+
+#campo_nome{
+    top: -1px;
+}
+
+#campo_sobre{
+    top: 60px;
+}
+
+#campo_cpf{
+    top: 180px;
+}
+
+#campo_data{
+    top: 120px;
+}
+
+#text_data{
+    color: grey;
+    font-size: 15px;
+    top: 195px;
+    left: 95px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+
+.esconder {
+    display: none;
+  }
+    
+
+
+#campo_data:required:invalid::-webkit-datetime-edit{
+	color: transparent;
+    
+}
+#campo_data:focus::-webkit-datetime-edit{
+	color: black !important;
+}
+
+
+
+
+#campo_email, #campo_senha, #campo_endereco,#campo_tel{
+    background-color: #D9D9D9;
+    width:45vh;
+    height: 45px;
+    max-height: 100vh;
+    border: 0;
+    position: absolute;
+    margin-top: 60px;
+    margin-left:58vh;
+    
+}
+
+#campo_endereco{
+    top: -1px;
+}
+
+#campo_tel{
+    top: 60px;
+}
+
+#campo_email{
+    top: 120px;
+}
+
+#campo_senha{
+    top: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+input{
+    text-align: center;
+   
+}
+
+.olho {
+
+    position: absolute;
+    object-fit: cover;  
+    width: 15px;
+    top: 258px;
+    left: 560px;
+    cursor: pointer;
+}
+
+#btn_mostrar {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+
+
+
+
+#campo_email{
+    background-image: url(assets/icone_email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.9em;
+    background-position: 10px;
+    
+}
+
+#campo_senha{
+    background-image: url(assets/icone_chave.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.9em;
+    padding-left: 1.3em;
+    background-position: 10px
+    
+}
+
+
+
+.botao-login{
+    top: 330px;
+    position: absolute;
+    left: 34vh;
+}
+
+.botao-login > button{
+    width: 199px ;
+    height: 60px;
+    border-radius: 60px;
+}
+
+
+
+
+/* Botão Login*/
+.botao-login > button {
+    border-color: #F9D423;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #F9D423 inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .botao-login > button:hover {
+    box-shadow: 0 0 10px 0 transparent inset, 0 0 10px 4px #F9D423;
+    color: #1B3764;
+  }

@@ -15,3 +15,10 @@ btnMostrar.addEventListener('click', function() {
   }
 	});
 });
+
+
+
+var input = document.getElementById('campo_data');
+    input.addEventListener('click', function() {
+      input.removeEventListener('text_data');
+    });
